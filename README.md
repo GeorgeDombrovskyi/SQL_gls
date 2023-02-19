@@ -3,6 +3,10 @@
 
 |SELECT | extracts data from a database|
 | ----- | -----|
+|SELECT * FROM BaseName | extracts ALL from base|
+|SELECT someColumn, oneMoreColumn FROM BaseName| extracts two column from base |
+|SELECT (someAction) AS newNameColumn FROM someBase | Do some action and show result at new column|
+| -----| -----|
 |UPDATE | updates data in a database|
 |DELETE | deletes data from a database|
 |INSERT INTO | inserts new data into a database|
