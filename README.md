@@ -6,6 +6,7 @@
 |SELECT * FROM BaseName | extracts ALL from base|
 |SELECT someColumn, oneMoreColumn FROM BaseName| extracts two column from base |
 |SELECT (someAction) AS newNameColumn FROM someBase | Do some action and show result at new column|
+|SELECT COUNT(DISTINCT someThing) FROM Customers; | Count Distinct|
 
 .
 .
@@ -17,7 +18,30 @@
 |INSERT INTO table_name <br>VALUES (value1, value2, value3, ...);|If you are adding values FOR ALL <br> the columns of the table, you do not need to <br> specify the column names in the SQL query.|
 
 
+.
+.
+.
+
 |UPDATE | updates data in a database|
+|------|------|
+| UPDATE table_name <br> SET column1 = value1, column2 = value2, ...<br> WHERE condition;| Example|
+
+
+.
+.
+.
+
+|SOME ACTION | -- |
+|------| ------|
+|MIN()| - |
+|MAX()| - |
+|SUM()| - |
+|AVG()| - |
+|COUNT()| - |
+
+
+
+
 |DELETE | deletes data from a database|
 
 |CREATE DATABASE | creates a new database|
