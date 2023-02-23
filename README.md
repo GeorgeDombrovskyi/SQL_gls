@@ -22,7 +22,8 @@
 .
 .
 
-|UPDATE | updates data in a database|
+### UPDATE -  updates data in a database
+|||
 |------|------|
 | UPDATE table_name <br> SET column1 = value1, column2 = value2, ...<br> WHERE condition;| Example|
 
@@ -31,9 +32,9 @@
 .
 .
 
-|SOME ACTION | -- |
-|------| ------|
+### SOME ACTION
 |MIN()| - |
+|------| ------|
 |MAX()| - |
 |SUM()| - |
 |AVG()| - |
@@ -41,13 +42,17 @@
 
 
 
+### CASE
+      SELECT 
+        firstname, 
+        lastname, 
+        salary, 
+        CASE 
+            WHEN salary <= 1500 THEN salary*0.1
+            WHEN salary > 1500 AND salary <= 2000 THEN salary*0.2
+            ELSE salary*0.3
+        END
+        AS tax 
+        FROM Employees
 
-|DELETE | deletes data from a database|
-
-|CREATE DATABASE | creates a new database|
-|ALTER DATABASE | modifies a database|
-|CREATE TABLE | creates a new table|
-|ALTER TABLE | modifies a table|
-|DROP TABLE | deletes a table|
-|CREATE INDEX | creates an index (search key)|
-|DROP INDEX | deletes an index|
+        ORDER BY lastname ASC
