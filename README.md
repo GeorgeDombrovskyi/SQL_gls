@@ -22,15 +22,12 @@
 .
 .
 
-### UPDATE -  updates data in a database
-|||
-|------|------|
-| UPDATE table_name <br> SET column1 = value1, column2 = value2, ...<br> WHERE condition;| Example|
+### UPDATE -  updates data in a database EXAMPLE
+      UPDATE table_name 
+            SET column1 = value1, 
+                column2 = value2 
+            WHERE condition;
 
-
-.
-.
-.
 
 ### SOME ACTION
 |MIN()| - |
