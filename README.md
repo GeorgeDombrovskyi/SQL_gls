@@ -1,4 +1,4 @@
-# SQL Glossary
+# SQL  Glossary
 
 
 |SELECT | extracts data from a database|
